@@ -1,10 +1,29 @@
 body * {
-  outline: 1px solid lightgrey;
+  outline: 2px solid rgb(22, 21, 21);
+  height: 60px;
+  width: 120px;
+  text-align: center;
+}
+
+.main:hover ~ .element{
+  display: block;
+background-image: url('img/gb.jpg');
 }
 
 
 
+.element{
+  display:none;
+  position: relative;
+  top:51px;
+  left: 103px;
+  
+  
+}
 
+.main:hover .element{
+  display: block;
+}
 
 
 
