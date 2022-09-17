@@ -3,24 +3,14 @@ body * {
   height: 60px;
   width: 120px;
   text-align: center;
+  padding-top: 25px;
 }
-
-.main:hover ~ .element{
-  display: block;
-background-image: url('img/gb.jpg');
-}
-
-
-
 .element{
   display:none;
   position: relative;
   top:51px;
-  left: 103px;
-  
-  
+  left: 120px;  
 }
-
 .main:hover .element{
   display: block;
 }
