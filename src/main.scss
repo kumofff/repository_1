@@ -4,15 +4,11 @@ body * {
 
 .main{
   display: flex;
-  width: 481px;
-}  
+  justify-content: center; 
+}
 .main_content{
-  display: inline-flexbox;
   width: 469px; 
-  background-color: #FFFFFF;
-  margin-top: 26px;
-  margin-left: 19px;
-  margin-right: 20px;
+  background-color: #FFFFFF; 
 }
 .header{
   display: flex;
