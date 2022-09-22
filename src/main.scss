@@ -1,19 +1,23 @@
 body * {
-  outline: 2px solid rgb(22, 21, 21);
-  height: 60px;
-  width: 120px;
-  text-align: center;
-  padding-top: 25px;
+  outline: 1px solid lightgrey;
+ 
 }
-.element{
-  display:none;
+.menu{
+  display: flex;
+  font-display: column; 
+}
+.menu_item{
   position: relative;
-  top:51px;
-  left: 120px;  
+  display:flex ;
 }
-.main:hover .element{
+.menu_item:hover > .sub_menu{
   display: block;
 }
-
-
+.sub_menu{
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  display: none;
+  padding-left: 50%;
+}
 
