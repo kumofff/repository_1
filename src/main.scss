@@ -41,10 +41,35 @@ align-items: flex-end;
 }
 
 .silder{
+  position: relative;
   width: 100%;
   height: 400px;
   background-image: url("./img/silder/big-orange-bg.png");
-  border-top: 2px;
-  border-bottom: 2px;
-  border-color: #fb9c06;
+  border-top: 4px solid #fb9c06;
+  border-bottom: 4px solid #fb9c06;
+}
+.top_silder_tittle{
+position:absolute ;
+top: 21.67%;
+left: 13.75%;
+width: 23.8%;
+background-color: #000000;
+opacity: 0.6;
+font-size:26px;
+font-weight: bold;
+color: #fb9c06;
+text-align: center;
+padding: 1% 0;
+}
+.bottom_silder_tittle{
+position:absolute ;
+top: 37.5%;
+left: 13.13%;
+width: 24.75%;
+background-color: #ffaf12;
+opacity: 0.6;
+font-size:26px;
+font-weight: bold;
+text-align: center;
+padding: 1% 0;
 }
