@@ -6,7 +6,7 @@ body * {
   display: flex;
 }
 .rabbit_logo{
-  margin-left: 15%;  
+  margin-left: 10%;  
 }
 .rabbit_tittle{
   font-size: 37px;
@@ -42,6 +42,9 @@ align-items: flex-end;
 
 .silder{
   width: 100%;
-  height: 300px;
-  background-image:url("big-orange-bg.png");
+  height: 400px;
+  background-image: url("./img/silder/big-orange-bg.png");
+  border-top: 2px;
+  border-bottom: 2px;
+  border-color: #fb9c06;
 }
