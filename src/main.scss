@@ -45,6 +45,8 @@ align-items: flex-end;
   width: 100%;
   height: 400px;
   background-image: url("./img/silder/big-orange-bg.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
   border-top: 4px solid #fb9c06;
   border-bottom: 4px solid #fb9c06;
 }
