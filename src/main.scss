@@ -2,9 +2,46 @@ body * {
   outline: 1px solid lightgrey;
 }
 
+.header{
+  display: flex;
+}
+.rabbit_logo{
+  margin-left: 15%;  
+}
+.rabbit_tittle{
+  font-size: 37px;
+}
+.first_tittle{
+line-height: 26px;
+color: #fb9c06;
+font-family: "Calibri";
+text-align: center;
+margin-top: 20px;
+}
+.second_tittle{
+line-height: 26px;
+color: #6e6d6b;
+font-family: "Calibri";
+text-align: center;
+font-weight: 1000;
+margin-top: 17px;
+}
+.navigation{
+display: flex;
+margin-left: 25%;
+margin-right: 10%;
+width: 100%;
+justify-content: space-between;
+align-items: flex-end;
+}
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-
-
-
-
-
+.silder{
+  width: 100%;
+  height: 300px;
+  background-image:url("src/img/silder/big-orange-bg.png");
+}
