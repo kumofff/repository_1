@@ -1,20 +1,24 @@
-.bg-work_icon {
+.sprite{
+    background-image:url('./img/navigation/css_sprites.png') ;
+}
+
+.work {
     width: 43px; height: 43px;
-    background: url('css_sprites.png') -84px -10px;
+    background-position:  -84px -10px;
 }
-.bg-blog_icon {
+.blog {
     width: 40px; height: 40px;
-    background: url('css_sprites.png') -147px -10px;
+    background-position: -147px -10px;
 }
-.bg-contact_icon {
+.contact {
     width: 50px; height: 34px;
-    background: url('css_sprites.png') -10px -77px;
+    background-position: -10px -77px;
 }
-.bg-home_icon {
+.home {
     width: 54px; height: 47px;
-    background: url('css_sprites.png') -10px -10px;
+    background-position: -10px -10px;
 }
-.bg-about_icon {
+.about {
     width: 23px; height: 44px;
-    background: url('css_sprites.png') -10px -131px;
+    background-position: -10px -131px;
 }

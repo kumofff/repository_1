@@ -1,0 +1,12 @@
+.menu_item{
+    padding: 5px 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: grey;
+}
+.menu_item:hover{
+    cursor: pointer;
+}

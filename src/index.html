@@ -11,9 +11,12 @@
    <header>
     <div class="container header">
      @@include("./partials/logo/_logo.html",{"first_line":"orange","second_line":"rabbit"})
-
-     <nav class="main_menu">
-min menu
+    <nav class="main_menu">
+     @@include("./partials/menu_item/_menu_item.html",{"menu_item":"home"})
+     @@include("./partials/menu_item/_menu_item.html",{"menu_item":"about"})
+     @@include("./partials/menu_item/_menu_item.html",{"menu_item":"work"})
+     @@include("./partials/menu_item/_menu_item.html",{"menu_item":"blog"})
+     @@include("./partials/menu_item/_menu_item.html",{"menu_item":"contact"})
      </nav>
     </div>
   </header>

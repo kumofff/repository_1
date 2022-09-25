@@ -1,4 +1,6 @@
 @import  "./partials/logo/logo.scss";
+@import "./sprites.scss";
+@import "./partials/menu_item/menu_item.scss";
 
 
 body * {
@@ -13,4 +15,10 @@ body * {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 5px 0;
 }
+.main_menu{
+  display: flex;
+  column-gap: 10px;
+}
+  
