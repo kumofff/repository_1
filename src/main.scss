@@ -21,6 +21,10 @@ body * {
   display: flex;
   column-gap: 10px;
 }
-.slyder{
-  background-image: url ".img/slyder/big-orange-bg.png";
+.slider{
+  background-image: url("./img/slider/big-orange-bg.png");
+  background-size: cover;
+  height: 400px;
+  border-top: 4px solid orange;
+  border-bottom: 4px solid orange;
 } 
