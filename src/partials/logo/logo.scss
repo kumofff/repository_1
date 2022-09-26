@@ -1,6 +1,6 @@
 .logo{
     display: flex;
-    column-gap: 40px;
+    column-gap: 51px;
     align-items: center;
 }
 .discription{
@@ -11,9 +11,10 @@
 }
 .first_line{
     color: orange;
+    font-size: 30px;
 }
 .second_line{
     color: grey;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 40px;
 }
