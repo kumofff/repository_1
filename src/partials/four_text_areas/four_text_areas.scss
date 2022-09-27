@@ -1,0 +1,27 @@
+.four_text_areas{
+    display: flex;
+}
+.text_area{
+width: 25%;
+padding: 5px 15px;
+font-size: 15px;
+height: 100px;
+overflow: hidden;
+
+
+}
+.text_area::before{
+  color: orange;
+  content: "read more ...";
+  position: relative;
+  top: 87%;
+  left: 77%;
+  width: 4%;
+  height: 4%;
+  text-align: right;
+  
+}
+ .text_area:hover  {
+  overflow: auto;
+  height: auto;
+}

@@ -21,22 +21,48 @@
     </div>
   </header>
    
-   <div class="slider">
+  <div class="slider">
     <div class="container">
      @@include("./partials/slider_item/_slider_item.html",
-    {"first_title":"do you like rabbits","second_title":"do you like oranges"})
+    {"first_title":"do you like rabbits ?","second_title":"do you like oranges ?"})
     </div>
   </div>
    
    <div class="main_content">
     <div class="container">
-     @@include("./partials/four_text_areas/four_text_areas.html")
+     @@include("./partials/four_text_areas/_four_text_areas.html")
+     <div class="main_link">
+      <a class="socks" href="#">Meet the team</a>
+     </div>
+     <div class="meeting_menu">
+        @@include("./partials/meeting_menu_items/_meeting_menu_items.html",
+          {"first_text_meet":"Hoof","second_text_meet":"-Lead designer",
+          "adress_of_picture_meet":"./img/meet_the_team/Layer 7.png",
+          "bottom_text_meet":"Hoof is our most talanted designer.However he`s not the talkative type and I would advise not getting on the wrong side of him."})
+        @@include("./partials/meeting_menu_items/_meeting_menu_items.html",
+        {"first_text_meet":"Nibs","second_text_meet":"-Geo/Director",
+          "adress_of_picture_meet":"./img/meet_the_team/Layer 8.png",
+          "bottom_text_meet":"Nibs is our go to woman. She’s the ceo/director of orange rabbit and runs fast when she has too."}) 
+        @@include("./partials/meeting_menu_items/_meeting_menu_items.html",
+        {"first_text_meet":"Squawk","second_text_meet":"-Developer",
+          "adress_of_picture_meet":"./img/meet_the_team/Layer 9.png",
+          "bottom_text_meet":"Squawk is no social bunny. But when it comes to programming he stands out from the crowd."})  
+     </div>
+     <div class="main_link">
+       <a class="socks" href="#">Send us a message...</a>
+     </div>
+     @@include("./partials/inputs/_inputs.html",{"input_name":"Name:"})
+     @@include("./partials/inputs/_inputs.html",{"input_name":"Email:"})
+     @@include("./partials/inputs/_bottom_input.html")
+     
+     <button class="button">Submit</button>
+     
     </div>
    </div>
 
    <div class="footer">
     <div class="container">
-footer
+        COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT, 
     </div>
    </div>
       

@@ -2,6 +2,10 @@
 @import "./sprites.scss";
 @import "./partials/menu_item/menu_item.scss";
 @import "./partials/slider_item/slider_item.scss";
+@import "./partials/four_text_areas/four_text_areas.scss";
+@import "./partials/meeting_menu_items/meeting_menu_items.scss";
+@import "./partials/inputs/inputs.scss";
+@import "./partials/inputs/bottom_input.scss";
 
 
 body * {
@@ -29,3 +33,33 @@ body * {
   border-top: 4px solid orange;
   border-bottom: 4px solid orange;
 } 
+.main_link{
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0;
+}
+.socks{
+  color: orange;
+}
+.meeting_menu{
+  display: flex;
+  width: 100%;
+  column-gap: 143px;
+}
+.button{
+  margin-left: 80%;
+  background-color: orange;
+  width: 174px;
+  height: 46px;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+}
+.footer{
+  background-color: orange;
+  font-size: 33px;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+}
