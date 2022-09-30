@@ -1,26 +1,23 @@
 .slider_item{
+    margin-left: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: flex-start;
-    flex-wrap: wrap;
     row-gap: 28px;
-    position: relative;
-    top: 130px;
-    left: 0px;
-    
-}
+  } 
+
 .first_title{
+    margin: 0;
     background-color: grey;
     font-size: 55px;
     text-transform: uppercase;
     color: orange;
 }
 .second_title{
+    margin: 0;
     background-color: orange;
     font-size: 55px;
     text-transform: uppercase;
-    color: grey;
-    padding: 5px 0;
+    color: grey;   
 }
 

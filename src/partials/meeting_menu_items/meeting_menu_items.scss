@@ -1,15 +1,37 @@
-.top_text_meet{
-    display: flex;
-    justify-content: space-around;
-
+.meeting_menu_items{
+    flex: 1 0 ;
+}
+.first_text_meet,
+.second_text_meet{
     font-size: 22px;
+    text-align: center;
 }
 .first_text_meet{
-    color: grey;
+    color: grey;   
 }
 .second_text_meet{
     color: orange;
 }
 .picture_meet{
-    padding: 5px 0;
+    padding: 50% 0;
+    background-image: url("./img/slider/big-orange-bg.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    position: relative;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 50%;
+        border: 4px solid orange;
+      }
+}
+.third_text_meet{
+    margin-block-end: 0;
+    
 }

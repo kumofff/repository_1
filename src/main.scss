@@ -33,15 +33,21 @@ body * {
   border-top: 4px solid orange;
   border-bottom: 4px solid orange;
 } 
+.slider-content{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+}
 .main_link{
   width: 100%;
   font-size: 40px;
   text-align: center;
   padding: 20px 0;
-}
-.socks{
   color: orange;
+  text-decoration: underline;
 }
+
 .meeting_menu{
   display: flex;
   width: 100%;
