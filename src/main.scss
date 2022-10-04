@@ -7,6 +7,12 @@
 @import "./partials/inputs/inputs.scss";
 @import "./partials/inputs/bottom_input.scss";
 
+@font-face {
+  font-family:"custom";
+  src: url('./fonts/BebasNeue-Regular.ttf');
+  font-weight: 400;
+}
+
 
 body * {
   outline: 1px solid lightgrey;
@@ -63,6 +69,7 @@ body * {
   margin-bottom: 20px;
 }
 .footer{
+  font-family: "custom";
   background-color: orange;
   font-size: 33px;
   padding: 10px 0;
