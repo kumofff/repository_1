@@ -4,12 +4,11 @@
 @import "./partials/slider_item/slider_item.scss";
 @import "./partials/four_text_areas/four_text_areas.scss";
 @import "./partials/meeting_menu_items/meeting_menu_items.scss";
-@import "./partials/inputs/inputs.scss";
-@import "./partials/inputs/bottom_input.scss";
+
 
 @font-face {
   font-family:"custom";
-  src: url('./fonts/BebasNeue-Regular.ttf');
+  src: url('../fonts/BebasNeue-Regular.ttf');
   font-weight: 400;
 }
 
@@ -53,26 +52,46 @@ body * {
   color: orange;
   text-decoration: underline;
 }
-
 .meeting_menu{
   display: flex;
   width: 100%;
   column-gap: 143px;
 }
-.button{
-  margin-left: 80%;
-  background-color: orange;
-  width: 174px;
-  height: 46px;
-  font-size: 30px;
-  color: white;
-  margin-bottom: 20px;
-}
 .footer{
-  font-family: "custom";
   background-color: orange;
   font-size: 33px;
   padding: 10px 0;
   text-align: center;
   color: white;
+}
+.form{
+display: flex;
+flex-direction: column;
+}
+.label{
+  display: flex;
+  align-items: baseline;
+  color: orange;
+  font-size:24px ;
+  column-gap: 70px;
+}
+.input{
+  display: flex;
+  width: 100%;
+  padding: 6px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgb(240, 235, 235);
+}
+.message{
+  margin-left: -27px;
+}
+.button{
+  width: fit-content;
+  margin-left: auto;
+  background-color: orange;
+  font-size: 30px;
+  color: white;
+  padding: 5px 15px;
+  margin-bottom: 10px; 
 }

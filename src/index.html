@@ -29,10 +29,10 @@
     </div>
   </div>
    
-   <div class="main_content">
+   <div class="main_content ">
     <div class="container">
      @@include("./partials/four_text_areas/_four_text_areas.html")
-     <div class="main_link">
+     <div class="main_link ">
       Meet the team...
      </div>
      <div class="meeting_menu">
@@ -52,11 +52,22 @@
      <div class="main_link">
        Send us a message...
      </div>
-     @@include("./partials/inputs/_inputs.html",{"input_name":"Name:"})
-     @@include("./partials/inputs/_inputs.html",{"input_name":"Email:"})
-     @@include("./partials/inputs/_bottom_input.html")
-     
-     <button class="button">Submit</button>
+     <form class="form" name="menu_input" action="#" method="get">
+      <label class="label">
+        Name
+        <input class="input" type="text" name="first_input">
+      </label>
+      <label class="label">
+        Email
+        <input class="input" type="email" name="second_input">
+      </label>
+      <label class="label ">
+        Message
+        <textarea class="input message" name="third_input" cols="40" rows="5"></textarea>
+      </label>
+      <button class="button">Submit</button>
+    
+      </form>
      
     </div>
    </div>
