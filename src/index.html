@@ -31,7 +31,12 @@
    
    <div class="main_content ">
     <div class="container">
-     @@include("./partials/four_text_areas/_four_text_areas.html")
+      <div class="four_areas">
+        @@include("./partials/four_text_areas/_four_text_areas.html")
+        @@include("./partials/four_text_areas/_four_text_areas.html")
+        @@include("./partials/four_text_areas/_four_text_areas.html")
+        @@include("./partials/four_text_areas/_four_text_areas.html")
+      </div>
      <div class="main_link ">
       Meet the team...
      </div>
@@ -52,31 +57,13 @@
      <div class="main_link">
        Send us a message...
      </div>
-     <form class="form" name="menu_input" action="#" method="get">
-      <label class="label">
-        Name
-        <input class="input" type="text" name="first_input">
-      </label>
-      <label class="label">
-        Email
-        <input class="input" type="email" name="second_input">
-      </label>
-      <label class="label ">
-        Message
-        <textarea class="input message" name="third_input" cols="40" rows="5"></textarea>
-      </label>
-      <button class="button">Submit</button>
-    
-      </form>
-     
+     @@include("./partials/input_menu/_input_menu.html")
     </div>
    </div>
-
    <div class="footer">
     <div class="container">
         COPYRIGHT ORANGE RABBIT - DESIGNED BY JAKE BHATT, 
     </div>
    </div>
-      
   </body>
 </html>

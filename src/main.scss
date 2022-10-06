@@ -4,7 +4,7 @@
 @import "./partials/slider_item/slider_item.scss";
 @import "./partials/four_text_areas/four_text_areas.scss";
 @import "./partials/meeting_menu_items/meeting_menu_items.scss";
-
+@import "./partials/input_menu/input_menu.scss";
 
 @font-face {
   font-family:"custom";
@@ -44,6 +44,10 @@ body * {
   justify-content: start;
   height: 100%;
 }
+.four_areas{
+  display: flex;
+  width: 100%;
+}
 .main_link{
   width: 100%;
   font-size: 40px;
@@ -63,35 +67,4 @@ body * {
   padding: 10px 0;
   text-align: center;
   color: white;
-}
-.form{
-display: flex;
-flex-direction: column;
-}
-.label{
-  display: flex;
-  align-items: baseline;
-  color: orange;
-  font-size:24px ;
-  column-gap: 70px;
-}
-.input{
-  display: flex;
-  width: 100%;
-  padding: 6px 0;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background-color: rgb(240, 235, 235);
-}
-.message{
-  margin-left: -27px;
-}
-.button{
-  width: fit-content;
-  margin-left: auto;
-  background-color: orange;
-  font-size: 30px;
-  color: white;
-  padding: 5px 15px;
-  margin-bottom: 10px; 
 }
