@@ -11,6 +11,16 @@
   src: url('../fonts/BebasNeue-Regular.ttf');
   font-weight: 400;
 }
+@font-face {
+  font-family:"calibri";
+  src: url('../fonts/Calibri.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family:"Stmarie";
+  src: url('../fonts/StMarie-Thin.ttf');
+  font-weight: 400;
+}
 
 
 body * {
@@ -55,6 +65,8 @@ body * {
   padding: 20px 0;
   color: orange;
   text-decoration: underline;
+  font-family: "Stmarie";
+  font-weight: bold;
 }
 .meeting_menu{
   display: flex;
@@ -67,4 +79,6 @@ body * {
   padding: 10px 0;
   text-align: center;
   color: white;
+  font-family: "Stmarie";
+  font-weight: bold;
 }
