@@ -25,6 +25,18 @@ body * {
 .header{
   grid-area: header;
   background-color: lightgray;
+ 
+  &_nav{
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+ 
+   &_link{
+      color: rgb(14, 10, 10);
+      text-decoration: none;
+   }
+  }
+  
 }
 
 .aside{
@@ -42,32 +54,32 @@ body * {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
 
-    &__slider_news{
+    &_slider_news{
       background-color: rgb(17, 180, 192);
       grid-column: 1/3;
       grid-row: 1/2;
     }
     
-    &__news{
+    &_news{
       background-color: rgb(22, 126, 126);
       grid-column: 1/3;
       grid-row: 2/3;
     }
     
-    &__last_news{
+    &_last_news{
       background-color: rgb(50, 129, 129);
       grid-column: 1/2;
       grid-row: 3/5;
 
     }
     
-    &__news_feed{
+    &_news_feed{
       background-color: rgb(94, 155, 155);
       grid-column: 1/2;
       grid-row: 5/6;
     }
     
-    &__news_sidebar{
+    &_news_sidebar{
       background-color: rgb(159, 223, 223);
       grid-column: 2/3;
       grid-row: 3/6;
