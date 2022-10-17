@@ -1,8 +1,7 @@
 
 @font-face {
-  font-family:"scriptin";
-  src: url('../fonts/SCRIPTIN.ttf');
-  font-weight: 400;
+  font-family:"custom";
+  src: url("../fonts/Anton-Regular.ttf");
 }
 body * {
   outline: 1px solid lightgrey;
@@ -18,7 +17,8 @@ body * {
   justify-content: space-between;
 }
 .nav__logo{
-    font-family: "scriptin";
+  text-decoration: none;  
+  font-family:"custom";
   }
 
 
