@@ -1,29 +1,93 @@
 
 @font-face {
   font-family:"custom";
-  src: url("../fonts/Anton-Regular.ttf");
+  src: url("../fonts/SCRIPTIN.ttf");
   font-weight: 400;
 }
-body * {
-  outline: 1px solid lightgrey;
+@font-face {
+  font-family:"alegreya";
+  src: url("../fonts/Alegreya-Regular.ttf");
+  font-weight: 400;
 }
+@media (max-width:800px) {
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav_navigation {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+// body * {
+//   outline: 1px solid lightgrey;
+// }
+
 .container{
-  width: 1260px;
+  max-width: 1260px;
   margin: 0 auto;
 }
 
+a {
+text-decoration: none;
+}
+
 .nav{
-  padding: 22px 0;
   display: flex;
   justify-content: space-between;
-}
-.nav__logo{
-  text-decoration: none;  
-  font-family:"custom";
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(86,83,76,0.5294117647058824);
+  opacity: 0.7;
+
+  &_logo{   
+    font-family:"custom";
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 9px;
+    line-height: 24px;
   }
-
-
-
+  &_navigation{
+    display: flex;
+    column-gap: 39px;
+    text-transform: uppercase;
+    list-style: none;  
+  }
+  &_item a{
+    font-size: 14px;
+    letter-spacing: 4px;
+    line-height: 24px;
+    color: #ffffff;;
+    font-family: 'alegreya', serif;
+  }
+  &_item:after{
+    margin-left: 30px;
+    content: "~";
+    color: #ffffff;;
+  }
+  &_item:last-child:after{
+    margin: 0;
+    content: "";
+  }
+  &_icons{
+    display: flex;
+    column-gap: 27px;
+  }
+  &_icons a{
+    color: white;
+    font-size: 20px;
+  }
+}
+.nav, .main_bread{
+  background-image: url("..img/img 13.png");
+  background-repeat: no-repeat;
+}
+.main_bread{
+  min-height: 830px;
+}
 
 
 
