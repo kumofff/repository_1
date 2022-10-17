@@ -1,6 +1,25 @@
+
+@font-face {
+  font-family:"scriptin";
+  src: url('../fonts/SCRIPTIN.ttf');
+  font-weight: 400;
+}
 body * {
   outline: 1px solid lightgrey;
 }
+.container{
+  width: 1260px;
+  margin: 0 auto;
+}
+
+.nav{
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo{
+    font-family: "scriptin";
+  }
 
 
 
