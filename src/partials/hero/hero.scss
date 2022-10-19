@@ -1,0 +1,57 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    
+    &_text{
+      margin-top: 165px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &_main{
+        font-size: 92px;
+        letter-spacing: 7px;
+        line-height: 24px;
+        color: #ffffff;
+        font-weight: 700;
+      }
+      &_under{
+        margin-top: 100px;
+        width: 580px;
+        font-size: 24px;
+        letter-spacing: 2px;
+        line-height: 36px;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+  
+  }
+  
+  .our_menu{
+    margin-top: 17px;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(86,83,76,0.5294117647058824);
+    border: 1px solid #9e9c93;
+    font-size: 14px;
+    letter-spacing: 4px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "alegreya";
+  }
+  
+  .smart_element{
+    margin-top: 13%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 20px solid white;
+    background-color: white;
+    background-image: url("../img/Vektor-Smartobjekt 4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
