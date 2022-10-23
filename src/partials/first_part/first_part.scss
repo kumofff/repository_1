@@ -1,0 +1,7 @@
+.main_first_part{
+    display: flex;
+
+    &_left, &_right{
+        width: 50%;
+    }
+}
