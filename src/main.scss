@@ -1,6 +1,7 @@
 @import "./partials/hero/hero.scss";
 @import "./partials/nav/nav.scss";
 @import"./partials/first_part/first_part.scss";
+
 @font-face {
   font-family:"custom";
   src: url("../fonts/SCRIPTIN.ttf");
@@ -9,6 +10,11 @@
 @font-face {
   font-family:"alegreya";
   src: url("../fonts/Alegreya-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family:"proxima_nova";
+  src: url("../fonts/proximanova_regular.ttf");
   font-weight: 400;
 }
 
