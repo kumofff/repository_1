@@ -1,3 +1,11 @@
 .second_part{
     background-color: aqua;
+    display: flex;
+    &_left{
+        width: 420px;
+        
+        height: 511px;
+        background-image: url("../img/img 4.png");
+        background-size: cover;
+    }
 }
