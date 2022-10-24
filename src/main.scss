@@ -43,4 +43,12 @@ header{
   height: 900px;
   background-size: cover;
 }
+.second_main{
+  height: 750px;
+  background-image: url("../img/placeholder 2.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+}
