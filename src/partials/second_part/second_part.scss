@@ -1,11 +1,76 @@
 .second_part{
-    background-color: aqua;
+    background-color: white;
     display: flex;
     &_left{
-        width: 420px;
-        
+        width: 50%;
         height: 511px;
         background-image: url("../img/img 4.png");
-        background-size: cover;
     }
+    &_right{
+        width: 50%;
+        padding: 84px 62px 40px 62px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 15px;
+    }
+    &_text{
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #56534c;
+        font-family: "proxima_nova";
+        text-align: start;
+        margin: 65px 0;
+    }
+}
+
+.rating{
+    position: relative;
+    font-size: 30px;
+    display: inline-block;
+    &__items{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    &__item{
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    &__label{
+        flex: 0 0 20%;
+        height: 100%;
+        cursor: pointer;
+    }
+    &__label::before{
+        content: "★";
+        display: block;
+        transition: color 0.3s case 0s;
+    }
+}
+.rating::before{
+    content: "★★★★★";
+    display: block;
+}
+
+.rating__item:checked,
+.rating__item:checked ~ .rating__label{
+    color: orangered;
+}
+
+.rating__label:hover,
+.rating__label:hover ~ .rating__label,
+.rating__label:checked ~ .rating__label:hover{
+    color: orange;
 }
