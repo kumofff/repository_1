@@ -1,13 +1,15 @@
 .second_part{
     background-color: white;
     display: flex;
+    width: 100%;
+
     &_left{
-        width: 50%;
+        width: 72%;
         height: 511px;
         background-image: url("../img/img 4.png");
     }
     &_right{
-        width: 50%;
+        width: 100%;
         padding: 84px 62px 40px 62px;
         display: flex;
         flex-direction: column;

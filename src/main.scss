@@ -20,8 +20,11 @@
 
 body * {
   outline: 1px solid lightgrey;
+  
 }
-
+body{
+  margin: 0;
+}
 .container{
   max-width: 1260px;
   margin: 0 auto;
@@ -42,7 +45,9 @@ header{
   background-repeat: no-repeat;
   height: 900px;
   background-size: cover;
+  width: 100%;
 }
+
 .second_main{
   height: 750px;
   background-image: url("../img/placeholder 2.png");
@@ -50,5 +55,4 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }

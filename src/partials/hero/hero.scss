@@ -2,13 +2,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-  
-    
-    &_text{
-      margin-top: 165px;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+    padding: 186px 0;
+    height: 100%;
+    position: relative;
+
       &_main{
         font-size: 92px;
         letter-spacing: 7px;
@@ -25,8 +22,6 @@
         color: #ffffff;
         text-align: center;
       }
-    }
-  
   }
   
   .our_menu{
@@ -45,7 +40,10 @@
   }
   
   .smart_element{
-    margin-top: 13%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
     width: 80px;
     height: 80px;
     border-radius: 50%;
