@@ -72,7 +72,6 @@
         background-image: url("..img/img 12.png");
         background-position: 28% 4%;  
     }
-    
     &_bottom_title{
         width: 230px;
         font-size: 24px;
@@ -100,11 +99,9 @@
         background-image: url("../img/quotes_2.png") ;
         width: 43px;
         height: 24px;
-
     }   
            
 }
-
 .part_right{
     display: grid;
     grid-template-columns: auto auto ;
@@ -116,7 +113,18 @@
     &_item{
         background-size: cover;
         background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
     }
+    &_item::after{
+        content: "";
+        border: 5px solid white;
+        height: 90%;
+        width: 90%;
+       
+    }
+      
 }
 .element{
     background-image: url("../img/Vektor-Smartobjekt 3.png");
