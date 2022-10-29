@@ -1,1 +1,3 @@
-//here will by JavaScript code ...
+$(document).ready(function(){
+    $(('.slick-slider').slick);
+  });
