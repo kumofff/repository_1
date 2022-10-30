@@ -1,0 +1,28 @@
+.slick-track{
+    display: flex;
+}
+.slider{
+    min-width: 0;
+    width: 400px;
+    position: relative;
+}
+.slick-list{
+    overflow: hidden;
+}
+
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+
+}
+.slider .slick-prev  {
+    left: 0;
+    background-image: url("../img/interface - arrow left.png") 0 0 / 100% no-repeat;
+}
+.slider .slick-next  {
+    right: 0;
+    background-image: url("../img/interface - arrow right.png");
+}
