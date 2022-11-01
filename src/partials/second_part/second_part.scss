@@ -1,10 +1,9 @@
+@import"./second_part_right_element/second_part_right_element.scss";
 .second_part{
     background-color: white;
     display: flex;
     width: 85%;
     clip-path: polygon(0% 0%, 114% -17%, 114% 107%, 10% 100%, -55% 0%, 0% 1%);
-    
-
     &_left{
         width: 80%;
         height: 511px;
@@ -26,42 +25,7 @@
         background-repeat: no-repeat;
         position: relative;
        
-        &_element{
-            width: 36%;
-            height: 44%;
-            position: absolute;
-            top: -12%;
-            right: -20%;
-            background-image: url("../img/Vektor-Smartobjekt.png");
-            background-size: cover;
-            background-color: white;
-            font-size: 18px;
-            letter-spacing: 2px;
-            line-height: 30px;
-            text-transform: uppercase;
-            color: #a47d5e;
-            font-weight: 700;
-            font-family: "Alegreya";
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            row-gap: 60px;
-            padding: 15px 0;
-            box-shadow: -14px 19px 19px 9px rgba(5, 5, 6, 0.2);
-            
-            &__first{
-                font-size: 32px;
-                margin: 0;
-            }
-            &__second{
-                font-size: 100px;
-                margin: 0;
-            }
-            &__third{
-                font-size: 20px;
-                margin: 0;
-            }
-        }
+        
     }
 
     &_right::before{
@@ -81,16 +45,11 @@
         color: #56534c;
         font-family: "proxima_nova";
         text-align: start;
-        margin: 65px 0;
+        margin: 30px 0;
     }
 }
-.ball{
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    background-color: aqua;
-    
-}
+
+
 .rating{
     position: relative;
     font-size: 30px;

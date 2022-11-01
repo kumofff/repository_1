@@ -1,4 +1,32 @@
 <div class="third_part">
-
-    
+    <div class="third_part_left">
+       @@include("./third_part_sidebar_element/_third_part_sidebar_element.html",
+       {"address_of_image":"./img/img 3.png","top_text":"Class aptent","bottom_text":"Quot alienum persecuti ut eam, nam ad atqui primis nusquam."})
+       @@include("./third_part_sidebar_element/_third_part_sidebar_element.html",
+       {"address_of_image":"./img/img 2.png","top_text":"Nulla eget","bottom_text":"Nullam dictum felis eu pede mollis pretium Integer tincidunt."})
+       @@include("./third_part_sidebar_element/_third_part_sidebar_element.html",
+       {"address_of_image":"./img/img.png","top_text":"Sed nibh purus","bottom_text":" Aenean eleifend tellus leo ligula, porttitor eu, consequat vitae."})
+    </div>
+    <div class="third_part_right">
+        <div class="third_part_right_top">
+            <div class="part_left_top_title">The Jibarito sandwich</div>
+            <div class="part_left_top_text ">The best sandwich you’ve ever tasted!</div>
+        </div>
+        <div class="third_part_right_bottom">
+            <div class="third_part_right_bottom_left_element">FULL RECIPE</div>
+            <div class="third_part_right_bottom_right_element">
+                @@include("./right_element_item/_right_element_item.html",
+                {"third_part_element_text_first":"prep","third_part_element_text_second":"15",
+                "third_part_element_text_third":"mins"})
+                @@include("./right_element_item/_right_element_item.html",
+                {"third_part_element_text_first":"cook","third_part_element_text_second":"35",
+                "third_part_element_text_third":"mins"})
+                <div class="third_element">
+                    <p class="third_element_first">ready in</p>
+                    <p class="third_element_second">50</p>
+                    <p class="third_element_third">mins</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

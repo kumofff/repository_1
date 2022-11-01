@@ -21,10 +21,8 @@
         <div>
             @@include("./slick/_slick.html")
         </div>
-        <div class ="second_part_right_element">
-            <p class="second_part_right_element__first">ready in</p>
-            <p class="second_part_right_element__second">40</p>
-            <p class="second_part_right_element__third">mins</p>
-        </div>
+            @@include("./second_part_right_element/_second_part_right_element.html",
+            {"sec.part.el_first":"ready in","sec.part.el_second":"40",
+            "sec.part.el_third":"mins"})
     </div>
 </div>

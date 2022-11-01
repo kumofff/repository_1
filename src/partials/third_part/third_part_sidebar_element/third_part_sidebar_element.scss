@@ -1,0 +1,29 @@
+.sidebar_element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    
+    &_image{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-position: center;
+    }
+    &_top_text{
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        color: #a47d5e;
+        font-weight: 700;
+        font-family: "alegreya";
+    }
+    &_bottom_text{
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        color: #56534c;
+        font-family: "proxima_nova";
+        text-align: center;
+    }
+}

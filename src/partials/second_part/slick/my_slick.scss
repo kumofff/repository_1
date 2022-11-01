@@ -1,28 +1,43 @@
 .slick-track{
     display: flex;
+    column-gap: 40px;
+    align-items: flex-start;
 }
 .slider{
     min-width: 0;
     width: 400px;
     position: relative;
+    padding: 0 33px;
 }
 .slick-list{
     overflow: hidden;
 }
+.slider .slick-slide{
+    height: 90px;
+    border-radius: 50%;
+    background-position: center;
 
+}
 .slider .slick-arrow{
     position: absolute;
-    top: 50%;
+    top: 37%;
     font-size: 0;
     width: 30px;
     height: 30px;
+    border: none;
+    background-color: transparent;
 
 }
 .slider .slick-prev  {
     left: 0;
-    background-image: url("../img/interface - arrow left.png") 0 0 / 100% no-repeat;
+    background-image: url(".../img/arrow_left.png") ;
+    background-position: 100%;
+    background-size: cover;
+    
 }
 .slider .slick-next  {
     right: 0;
-    background-image: url("../img/interface - arrow right.png");
+    background-image: url("../img/arrow_right.png") ;
+    background-position: 100%;
+    background-size: cover;
 }
