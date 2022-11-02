@@ -4,6 +4,7 @@
     display: flex;
     width: 85%;
     clip-path: polygon(0% 0%, 114% -17%, 114% 107%, 10% 100%, -55% 0%, 0% 1%);
+   
     &_left{
         width: 80%;
         height: 511px;
@@ -24,8 +25,6 @@
         background-position: right bottom;
         background-repeat: no-repeat;
         position: relative;
-       
-        
     }
 
     &_right::before{
@@ -48,12 +47,11 @@
         margin: 30px 0;
     }
 }
-
-
 .rating{
     position: relative;
     font-size: 30px;
     display: inline-block;
+    
     &__items{
         position: absolute;
         width: 100%;
@@ -88,12 +86,10 @@
     content: "★★★★★";
     display: block;
 }
-
 .rating__item:checked,
 .rating__item:checked ~ .rating__label{
     color: orangered;
 }
-
 .rating__label:hover,
 .rating__label:hover ~ .rating__label,
 .rating__label:checked ~ .rating__label:hover{

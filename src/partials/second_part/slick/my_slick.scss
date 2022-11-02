@@ -1,4 +1,4 @@
-.slick-track{
+.slider .slick-track{
     display: flex;
     column-gap: 40px;
     align-items: flex-start;
@@ -9,7 +9,7 @@
     position: relative;
     padding: 0 33px;
 }
-.slick-list{
+.slider .slick-list{
     overflow: hidden;
 }
 .slider .slick-slide{

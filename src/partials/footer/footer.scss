@@ -1,0 +1,41 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f1e9;
+    
+    &_logo{   
+      font-family:"custom";
+      color: black;
+      font-size: 30px;
+      letter-spacing: 9px;
+      line-height: 24px;
+    }
+    &_navigation{
+      display: flex;
+      column-gap: 39px;
+      text-transform: uppercase;
+      list-style: none;
+      padding: 25px 19px;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;  
+    
+        &_item a{
+        font-size: 14px;
+        letter-spacing: 4px;
+        line-height: 24px;
+        color: black;
+        font-family: 'alegreya', serif;
+        }
+        &_item:after{
+        margin-left: 30px;
+        content: "~";
+        color: black;
+        }
+        &_item:last-child:after{
+        content: "";
+        }
+    }
+}
