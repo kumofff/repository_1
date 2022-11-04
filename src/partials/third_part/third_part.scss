@@ -86,35 +86,3 @@
     }
 
 }
-.third_element{
-    width: 100%;
-    height: 33.3%;
-    background-image: url("../img/Vektor-Smartobjekt.png");
-    background-size: cover;
-    background-color: white;
-    letter-spacing: 2px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #a47d5e;
-    font-weight: 700;
-    font-family: "Alegreya";
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    padding: 15px 0;
-   
-    &_first{
-        font-size: 32px;
-        margin: 0;
-    }
-    &_second{
-        font-size: 100px;
-        margin: 0;
-    }
-    &third{
-        font-size: 20px;
-        margin: 0;
-    }
-
-}
