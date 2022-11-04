@@ -1,9 +1,16 @@
 .main_first_part{
     display: flex;  
     width: 100%;
+    @media (max-width:750px){
+        flex-direction: column;
+      }
 }
 .part_right{
-    width: 49%; 
+    width: 49%;
+    @media (max-width:750px){
+        width: auto;
+        height: 100vh;
+      } 
 }
 .part_left{
     display: flex;
@@ -12,6 +19,9 @@
     row-gap: 15px;
     padding: 73px 110px;
     width: 33%;
+    @media (max-width:750px){
+        width: auto;
+      } 
    
     &_top_title{
         font-size: 48px;
