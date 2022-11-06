@@ -4,14 +4,13 @@
     align-items: center;
     margin: 0;
     padding: 0;
-    position: relative;
     
 }
     
 .logo{   
       font-family:"custom";
       color: #ffffff;
-      font-size: 30px;
+      font-size: 40px;
       letter-spacing: 9px;
       line-height: 24px;
 }
@@ -41,6 +40,7 @@
       column-gap: 39px;
       text-transform: uppercase;
       list-style: none;
+      
       @media (max-width:750px){
        flex-direction: column;
        background-color: lightgrey;

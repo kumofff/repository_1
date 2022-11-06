@@ -21,7 +21,6 @@
   src: url("../fonts/proximanova_regular.ttf");
   font-weight: 400;
 }
-
 body * {
   outline: 1px solid lightgrey;
   
@@ -33,25 +32,18 @@ body{
   max-width: 1260px;
   margin: 0 auto;
 }
-
-
-
-
 a {
 text-decoration: none;
 }
-
-
 header{
   background-image: url("..img/img 13.png");
   background-repeat: no-repeat;
-  height: 900px;
+  height: 100vh;
   background-size: cover;
   width: 100%;
+  position: relative;
 }
-
 .second_main{
-  height: 750px;
   background-image: url("../img/placeholder 2.png");
   background-size: cover;
   display: flex;
