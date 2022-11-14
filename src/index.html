@@ -13,58 +13,58 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__container _container">
-          <a href="#" class="header__logo">
-            <img src="./img/Logo.png" alt="logo">
-          </a>
-          <nav class="header__menu menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="" class="menu__link">Главная</a>
-                </li>
-                <li class="menu__item">
-                  <a href="" class="menu__link">Меню</a>
-                </li>
-                <li class="menu__item">
-                  <a href="" class="menu__link">Онас</a>
-                </li>
-                <li class="menu__item">
-                  <a href="" class="menu__link">Бронь</a>
-                </li>
-                <li class="menu__item">
-                  <i class="fa fa-thin fa-cart-shopping"></i>
-                </li>
-              </ul>
-              <div class="menu__phone">
-                <div class="menu__phnum">
-                  <i class=" fa fa-solid fa-phone"></i>
-                  +999-888-76-54
-                </div>
-                <div class="menu__phtext">
-                  Свяжитесь с нами для бронирования
-                </div>
-              </div>
-              <button class="menu__bt1">Заказ столика</button>
-            </nav>
-          </div>
-      </header> 
+      @@include("./partials/Header/_header.html")
       <main class="page">
-        <div class="page__main-block main-block">
-          <div class="main-block__container container">
-            <div class="main-block__body">
-              <div class="main-block__title">
-                <div class="main-block__top">lkl</div>
-                <div class="main-block__bottom">kl;kl</div>
-              </div>
-              <div class="main-block_text">kl;kl;</div>
-              <button>hhn</button>
+        <section class="page__main-block main-block">
+          @@include("./partials/Main-block/_main-block.html")
+        </section>
+        <section class="page__services services">
+          <div class="services__container _container">
+            <div class="services__body">
+              @@include("./partials/services__column/_services__column.html",
+              {"service_title":"Магическая","service_title_orange":"Атмосфера",
+              "service_text":"В нашем заведении царит магическая атмосфера наполненная вкусными ароматами"})
+            
+              @@include("./partials/services__column/_services__column.html",
+              {"service_title":"Лучшее качество","service_title_orange":"Еды",
+              "service_text":"Качество нашей Еды - отменное!"})
+            
+              @@include("./partials/services__column/_services__column.html",
+              {"service_title":"Недорогая","service_title_orange":"Еда",
+              "service_text":"Стоимость нашей Еды зависит только от её количества. Качество всегда на высоте!"})
             </div>
           </div>
-          <div class="main-block__image _imagebg">
-            <img src="./img/hero image.jpg" alt="hero image">
+        </section>
+        <section class="page__history history">
+          <div class="history__container _container">
+            <div class="history__body">
+              <div class="history__column column-history">
+                <div class="column-history__title _main-title">Наша <span class="_main-title_orange">История</span></div>
+                <div class="column-history__text">Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</div>
+                <div class="column-history__progress ">
+                  @@include("./partials/history_element/_history_element.html",{"progress-history_num":"93","progress-history_title":"Напитки"})
+                  @@include("./partials/history_element/_history_element.html",{"progress-history_num":"206","progress-history_title":"Еда"})
+                  @@include("./partials/history_element/_history_element.html",{"progress-history_num":"71","progress-history_title":"Закуски"})
+                </div>
+              </div>
+              <div class="history__image">
+                <img src="./img/images.jpg" alt="images">
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+        <section class="page__stock stock">
+          @@include("./partials/Stock/_stock.html")
+        </section>
+        <section class="page__dishes dishes">
+          <div class="dishes__container _container">
+            <div class="dishes__body">
+              
+            </div>
+          </div>
+
+        </section>
+
       </main>
       <footer class="footer">PODVAL</footer>
     </div>
