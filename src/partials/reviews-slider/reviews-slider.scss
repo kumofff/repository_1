@@ -1,0 +1,29 @@
+@import "./card-reviews/card-reviews.scss";
+.slider-reviews__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+    padding: 104px 0 0 0;
+}
+.slider-reviews .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-reviews .slick-dots li{
+    list-style: none;
+    margin: 0 2px;
+}
+.slider-reviews .slick-dots button{
+    font-size: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+}
+.slider-reviews .slick-dots .slick-active button{
+    background-color: transparent;
+    border: 1px solid #FF7400;
+}

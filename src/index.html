@@ -8,12 +8,18 @@
     <link href="https://fonts.googleapis.com/css?family=Open Sans:regular,600,800,italic&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/096afb746e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./main.scss">
+    <link rel="stylesheet" type="text/css" href="./slick.scss"/>
+    <link rel="stylesheet" type="text/css" href="./slick-theme.scss"/>
     <title>My_project_2</title>
     <script src="./js/main.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/slick.min.js" defer></script> 
   </head>
   <body>
     <div class="wrapper">
+      <header class="header">
       @@include("./partials/Header/_header.html")
+      </header>
       <main class="page">
         <section class="page__main-block main-block">
           @@include("./partials/Main-block/_main-block.html")
@@ -59,14 +65,55 @@
         <section class="page__dishes dishes">
           <div class="dishes__container _container">
             <div class="dishes__body">
-              
+              <div class="dishes__title _main-title">Наши<span class="_main-title_orange">Блюда</span></div>
+              <div class="dishes__menu menu-dishes">
+                <div class="menu-dishes__image">
+                  <img src="./img/Mask Group (3).png" alt="dishes_image">
+                </div>
+                <div class="menu-dishes__cards ">
+                  @@include("./partials/card-dishes/_card-dishes.html")
+                  @@include("./partials/card-dishes/_card-dishes.html")
+                  @@include("./partials/card-dishes/_card-dishes.html")
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__catalog catalog">
+          <div class="catalog__container _container">
+            <div class="catalog__body">
+              <div class="catalog__title">Наше меню</div>
+              <div class="catalog__slider ">
+                @@include("./partials/catalog-slider/_catalog-slider.html")
+              </div>
+            </div>
+            <div class="catalog__image _imagebg">
+              <img src="./img/catalog_image.jpg" alt="catalog__image">
             </div>
           </div>
 
         </section>
-
+        <section class="page__reviews">
+          <div class="reviews__container _container">
+            <div class="reviews__body">
+              @@include("./partials/reviews-slider/_reviews-slider.html")
+            </div>
+          </div>
+        </section>
+        <section class="page__gallery">
+          @@include("./partials/gallery/_gallery.html")
+        </section>
+        <section class="page__cooks">
+          @@include("./partials/cooks/_cooks.html")
+        </section>
       </main>
-      <footer class="footer">PODVAL</footer>
+      <footer class="footer">
+        <div class="footer__container _container">
+        <div class="footer__image _imagebg">
+          <img src="./img/footer.png" alt="footer image">
+        </div>  
+        </div>
+      </footer>
     </div>
   </body>
 </html>

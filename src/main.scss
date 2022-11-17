@@ -3,6 +3,12 @@
 @import "./partials/history_element/history_element.scss";
 @import "./partials/Stock/stock.scss";
 @import "./partials/Main-block/main-block.scss";
+@import "./partials/card-dishes/card-dishes.scss";
+@import "./partials/catalog-slider/catalog-slider.scss";
+@import "./partials/reviews-slider/reviews-slider.scss";
+@import "./partials/gallery/gallery.scss";
+@import "./partials/cooks/cooks.scss";
+
 
 
 *{
@@ -76,7 +82,13 @@ body{
     color: #D67E35;
   }
 }
-
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
 .page{
   flex: 1 1 auto;
 
@@ -89,8 +101,13 @@ body{
   &__stock{
     margin: 119px 0 132px 0;
   }
+  &__catalog {
+    margin-top: 138px;
+  }
+  &__reviews{
+    background-color: #E5E5E5;
+  }
 }
-
 
 
 .history{
@@ -104,6 +121,7 @@ body{
     margin: 0 130px 0 0; 
     }
 }
+
 .column-history{
   &__title {
     text-align: center;
@@ -127,6 +145,49 @@ body{
   }
 }
 
+.dishes__title{
+  padding-bottom: 139px;
+}
+
+.catalog {
+  position: relative;
+
+  &__body {
+    position: relative;
+    padding: 100px 0 226px 0;
+    z-index: 2;
+  }
+  &__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &__title{
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #FFFFFF;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+  }
+}
+
+.reviews__body{
+  padding-bottom: 108px;
+}
+
 .footer{
-  font-size: 20px;
+  position: relative;
+  height: 732px;
+  &__image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
 }

@@ -1,10 +1,5 @@
 .header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 50;
-  
+      
     &__container {
       display: flex;
       min-height: 133.98px;
@@ -22,9 +17,8 @@
     }
   }
   
-  
-  .menu{
-    color: #FFFFFF;
+.menu{
+  color: #FFFFFF;
   
     &__list {
       display: flex;
@@ -56,18 +50,18 @@
       font-size: 14px;
       line-height: 19px;
     }
-    &__bt1 {
-      width: 157px;
-      height: 47px;
-      background: #FF7400;
-      color: #FFFFFF;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 19px;
-      text-transform: uppercase;
-      border: none;
-      
-    }
   
-  }
+}
+.bt1 {
+  width: 157px;
+  height: 47px;
+  background: #FF7400;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  border: none;  
+    
+}

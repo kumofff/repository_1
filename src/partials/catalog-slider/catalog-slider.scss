@@ -1,0 +1,43 @@
+@import "./card-catalog/card-catalog.scss";
+
+.slider-catalog__card{
+   width: 350px;
+   height: 510px;
+   background-color: #FFFFFF;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   row-gap: 20px;
+}
+.slider-catalog{
+   position: relative;
+   padding: 0 60px;
+   margin-top: 138px;
+}
+.slider-catalog .slick-arrow{
+   position: absolute;
+   top: 50%;
+   z-index: 2;
+   font-size: 0;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+.slider-catalog .slick-prev {
+   left: 0;
+   background-image: url("../img/Ellipse 4.png")  ;
+}
+.slider-catalog .slick-next{
+   right: 0;
+   background-image: url("../img/Ellipse 4.png")  ;
+}
+.slick-track{
+   display: flex;
+}
+.slider-catalog .slick-track{
+   column-gap: 30px;
+}
+ .slick-list{
+   overflow: hidden;
+}
