@@ -7,6 +7,12 @@
       display: flex;
       width: 100%;
       column-gap: 30px;
+
+      @media (max-width:840px) {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+      }
     }
   }
 .menu-dishes {
@@ -14,12 +20,25 @@
     &__image {
       width: 445px;
       height: 478px;
+
+      @media (max-width:840px) {
+        width: 100%;
+        height: 100%;
+      }
+      
+    }
+    &__image img{
+      width: 100%;
     }
     &__cards {
       flex: 1 1 auto;
       display: flex;
       flex-direction: column;
       row-gap: 25px;
+
+      @media (max-width:840px) {
+        row-gap: 84px;
+      }
     }
     &__card {
       display: flex;
@@ -42,9 +61,18 @@
       font-size: 26px;
       line-height: 30px;
       color: #000000;
+
+      @media (max-width:460px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      @media (max-width:390px) {
+        font-size: 20px;
+      }
     }
 }
 .text-dishes {
+
   
     &__name {
         margin-left:30px ;
@@ -58,5 +86,9 @@
       display: flex;
       align-self: center;
       flex: 0 1 50%;
+
+      @media (max-width:650px) {
+        display: none;
+      }
     }
 }

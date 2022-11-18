@@ -14,6 +14,11 @@
    position: relative;
    padding: 0 60px;
    margin-top: 138px;
+
+   @media (max-width:400px) {
+      padding: 0 ;
+      
+  }
 }
 .slider-catalog .slick-arrow{
    position: absolute;
@@ -23,6 +28,11 @@
    width: 40px;
    height: 40px;
    border-radius: 50%;
+
+   @media (max-width:400px) {
+      display: none;
+      
+  }
 }
 .slider-catalog .slick-prev {
    left: 0;

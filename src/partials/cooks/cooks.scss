@@ -5,27 +5,35 @@
         flex-direction: column;
         row-gap: 107px;
         padding: 0 0 100px 0;
+
     }
     &__title{
         text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     &__images{
         display: flex;
         column-gap: 30px;
+
+        @media (max-width:840px) {
+            flex-direction: column;
+            row-gap: 30px;
+        }
     }
     &__image{
         flex: 1 1 33.3%;
         width: 348px;
         height: 462px;
         
-        &_first{
-            background-image: url("../img/cook1.png"); 
+        @media (max-width:840px) {
+            width: 100%;
+            text-align: center;
         }
-        &_second{
-            background-image: url("../img/cook2.png");
-        }
-        &_third{
-            background-image: url("../img/cook3.png");
-        }
+        
+    }
+    &__image img{
+        width: 100%;
     }
 }

@@ -17,6 +17,12 @@
         "item1 item1 item2 item3"
         "item4 item5 item6 item6";
         gap: 30px;
+
+        @media (max-width:840px) {
+        display: flex;
+        flex-direction: column;
+         ;
+          }
     }
 }
 .image-gallery__item{

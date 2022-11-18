@@ -53,6 +53,7 @@ body{
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 ._imagebg img{
@@ -87,7 +88,7 @@ body{
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 5;
 }
 .page{
   flex: 1 1 auto;
@@ -113,13 +114,26 @@ body{
 .history{
   &__body {
     display: flex;
+    
+    @media (max-width:840px) {
+      flex-wrap: wrap;
+    }
   }
   &__column {
     flex: 0 1 50%;
     display: flex;
     flex-direction: column;
     margin: 0 130px 0 0; 
+
+    @media (max-width:840px) {
+      margin: 0;
+      flex: 0 1 100%;
     }
+    }
+  &__image img {
+    width: 100%;
+    ;
+  }
 }
 
 .column-history{
@@ -142,6 +156,13 @@ body{
     column-gap: 41px;
     justify-content: center;
     margin: 0 0 60px 0;
+
+    @media (max-width:390px) {
+      flex-direction: column;
+      flex: 0 1 100%;
+      margin-top: 100px;
+      row-gap: 22px;
+    }
   }
 }
 
