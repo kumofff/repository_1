@@ -86,9 +86,6 @@ body{
   &__services{
     margin: -87px 0 0 0;
   }
-  &__history, &__dishes, &__gallery, &__cooks, &__stock, &__catalog{
-    margin: 130px 0 0 0;
-  }
   &__stock{
     background: url("./img/bg.jpg") no-repeat right / cover;
   }
@@ -99,7 +96,9 @@ body{
     background-color: #E5E5E5;
   }
 }
-
+.page section:not(.page__services, .page__reviews){
+  margin: 130px 0 0 0;
+}
 
 .history{
   &__body {
