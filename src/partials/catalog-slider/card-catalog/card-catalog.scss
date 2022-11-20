@@ -23,7 +23,7 @@
         }
     }
     &__image:after{
-        content: "420";
+        content: attr(data-price);
         position: absolute;
         bottom: 0;
         right: 0;
@@ -75,6 +75,11 @@
             height: 40%;
             
         }
+    }
+    &__bt:hover{
+        position: relative;
+        top: 5px;
+        left: 5px;
     }
     
 }

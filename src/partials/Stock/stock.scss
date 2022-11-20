@@ -12,17 +12,13 @@
         flex-direction: column;
         row-gap: 41px;
       }
-
-  
     }
-    &__image{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      
+    &__bt:hover {
+      position: relative;
+      top: 3px;
+      left: 3px;
     }
+    
   }
   .title-stock{
     max-width: 601px;
@@ -48,7 +44,6 @@
       
     }
     &__bottom{
-      font-family: 'Open Sans';
       font-style: normal;
       font-weight: 700;
       font-size: 24px;
@@ -59,4 +54,5 @@
         text-align: center;
       }
     }
+    
   }

@@ -16,7 +16,6 @@
     <script src="./js/slick.min.js" defer></script> 
   </head>
   <body>
-    <div class="wrapper">
       <header class="header">
       @@include("./partials/Header/_header.html")
       </header>
@@ -25,37 +24,33 @@
           @@include("./partials/Main-block/_main-block.html")
         </section>
         <section class="page__services services">
-          <div class="services__container _container">
-            <div class="services__body">
-              @@include("./partials/services__column/_services__column.html",
-              {"service_title":"Магическая","service_title_orange":"Атмосфера",
-              "service_text":"В нашем заведении царит магическая атмосфера наполненная вкусными ароматами"})
+          <div class="services__body _container">
+            @@include("./partials/services__column/_services__column.html",
+            {"service_title":"Магическая","service_title_orange":"Атмосфера",
+            "service_text":"В нашем заведении царит магическая атмосфера наполненная вкусными ароматами"})
             
-              @@include("./partials/services__column/_services__column.html",
-              {"service_title":"Лучшее качество","service_title_orange":"Еды",
-              "service_text":"Качество нашей Еды - отменное!"})
+            @@include("./partials/services__column/_services__column.html",
+            {"service_title":"Лучшее качество","service_title_orange":"Еды",
+             "service_text":"Качество нашей Еды - отменное!"})
             
-              @@include("./partials/services__column/_services__column.html",
-              {"service_title":"Недорогая","service_title_orange":"Еда",
-              "service_text":"Стоимость нашей Еды зависит только от её количества. Качество всегда на высоте!"})
-            </div>
+            @@include("./partials/services__column/_services__column.html",
+            {"service_title":"Недорогая","service_title_orange":"Еда",
+            "service_text":"Стоимость нашей Еды зависит только от её количества. Качество всегда на высоте!"})
           </div>
         </section>
         <section class="page__history history">
-          <div class="history__container _container">
-            <div class="history__body">
-              <div class="history__column column-history">
-                <div class="column-history__title _main-title">Наша <span class="_main-title_orange">История</span></div>
-                <div class="column-history__text">Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</div>
-                <div class="column-history__progress ">
-                  @@include("./partials/history_element/_history_element.html",{"progress-history_num":"93","progress-history_title":"Напитки"})
-                  @@include("./partials/history_element/_history_element.html",{"progress-history_num":"206","progress-history_title":"Еда"})
-                  @@include("./partials/history_element/_history_element.html",{"progress-history_num":"71","progress-history_title":"Закуски"})
-                </div>
+          <div class="history__body _container">
+            <div class="history__column column-history">
+              <div class="column-history__title _main-title">Наша <span class="_main-title_orange">История</span></div>
+              <div class="column-history__text">Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</div>
+              <div class="column-history__progress ">
+                @@include("./partials/history_element/_history_element.html",{"progress-history_num":"93","progress-history_title":"Напитки"})
+                @@include("./partials/history_element/_history_element.html",{"progress-history_num":"206","progress-history_title":"Еда"})
+                @@include("./partials/history_element/_history_element.html",{"progress-history_num":"71","progress-history_title":"Закуски"})
               </div>
-              <div class="history__image">
-                <img src="./img/images.jpg" alt="images">
-              </div>
+            </div>
+            <div class="history__image">
+              <img src="./img/images.jpg" alt="images">
             </div>
           </div>
         </section>
@@ -63,8 +58,7 @@
           @@include("./partials/Stock/_stock.html")
         </section>
         <section class="page__dishes dishes">
-          <div class="dishes__container _container">
-            <div class="dishes__body">
+            <div class="dishes__body _container">
               <div class="dishes__title _main-title">Наши<span class="_main-title_orange">Блюда</span></div>
               <div class="dishes__menu menu-dishes">
                 <div class="menu-dishes__image">
@@ -77,28 +71,20 @@
                 </div>
               </div>
             </div>
-          </div>
         </section>
         <section class="page__catalog catalog">
-          <div class="catalog__container _container">
-            <div class="catalog__body">
+            <div class="catalog__body _container">
               <div class="catalog__title">Наше меню</div>
               <div class="catalog__slider ">
                 @@include("./partials/catalog-slider/_catalog-slider.html")
               </div>
-            </div>
-            <div class="catalog__image _imagebg">
-              <img src="./img/catalog_image.jpg" alt="catalog__image">
-            </div>
           </div>
 
         </section>
         <section class="page__reviews">
-          <div class="reviews__container _container">
-            <div class="reviews__body">
+            <div class="reviews__body _container">
               @@include("./partials/reviews-slider/_reviews-slider.html")
             </div>
-          </div>
         </section>
         <section class="page__gallery">
           @@include("./partials/gallery/_gallery.html")
@@ -107,13 +93,8 @@
           @@include("./partials/cooks/_cooks.html")
         </section>
       </main>
-      <footer class="footer">
-        <div class="footer__container _container">
-        <div class="footer__image _imagebg">
-          <img src="./img/footer.png" alt="footer image">
-        </div>  
-        </div>
+      <footer class="footer ">
+        <div class="_container"></div>
       </footer>
-    </div>
   </body>
 </html>
